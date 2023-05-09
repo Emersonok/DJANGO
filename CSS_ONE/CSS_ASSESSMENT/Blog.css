@@ -1,0 +1,52 @@
+body{
+  background: #25a5be;
+}
+
+h1{
+  border: 1px solid black ;
+}
+
+.first_message{
+  background: #e4bb10;
+}
+
+h2{
+  color: #8e10e4;
+}
+
+#first_list{
+  /* display: inline-block; */
+  text-decoration: overline;
+  color: #550a89;
+
+}
+
+input{
+  border: 2px solid rgb(144, 0, 0);
+}
+
+a{
+  color: #1017e4;
+}
+
+#textblock{
+  border: 5px solid gray;
+  width: 500px;
+  height: 300px;
+}
+
+.last_div{
+  background: #1017e4;
+  border-style: dashed;
+  border-color: yellow;
+  border-width: 2px;
+}
+
+#quest{
+  background: #e9f7b7;
+}
+
+#text{
+  width: 350px;
+  height: 150px;
+}

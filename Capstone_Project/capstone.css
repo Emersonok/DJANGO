@@ -1,0 +1,41 @@
+body{
+    color: white;
+    background: #00487C;
+    border-left: 50px solid #92BFB1;
+    border-right: 50px solid #92BFB1;
+    border-bottom: 50px solid #92BFB1;
+
+    text-align: center;
+    
+}
+p{
+    margin-top: 50px;
+}
+
+form{
+    margin: 50px;
+    
+}
+
+#fname{
+    width: 200px;
+    height: 30px;
+}
+
+#lname{
+    width: 200px;
+    height: 30px;
+}
+
+#mail{
+    width: 200px;
+    height: 30px;
+}
+
+#sign{
+    background: #F4AC45;
+    margin-top: 5px;
+    height: 60px;
+    width: 100px;
+    border-radius: 20px;
+}

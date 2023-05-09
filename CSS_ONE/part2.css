@@ -1,0 +1,20 @@
+body{
+  background: url(https://www.telegraph.co.uk/content/dam/eip/california/Huntington-City-Beach.jpg?imwidth=680);
+  background-repeat: no-repeat;
+}
+
+div{
+  background-color: blue;
+  border-color: orange;
+  border-width: 4px;
+  border-style: double;
+}
+
+p{
+  color: yellow;
+}
+
+span{
+  background: red;
+  color: black;
+}

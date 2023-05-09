@@ -1,0 +1,35 @@
+h2{
+  font-family: 'Barrio', cursive;
+  text-align: center;
+
+}
+
+td{
+  width: 80px;
+  height: 150px;
+  border: 1px solid white;
+}
+
+table{
+  margin: auto;
+}
+
+#one{
+  background: #1087e4;
+}
+
+#two{
+  background: #10e4ca;
+}
+
+#three{
+  background: #087222;
+}
+
+#four{
+  background: #d9e410;
+}
+
+#five{
+  background: #5b0615
+}
