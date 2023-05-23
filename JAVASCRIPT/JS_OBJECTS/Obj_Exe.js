@@ -6,7 +6,7 @@ var employee = {
     job: "Programmer",
     age: 31,
     nameLength: function(){
-        return this.name.length
+        return (this.name.length)
     }
   }
   console.log(employee.nameLength())
@@ -36,9 +36,8 @@ var employee = {
     name: "John Smith",
     job: "Programmer",
     age: 31,
-    lastName: function(){
-        lastname = employee["name"].split(" ")
-        return this.lastname[1]
+    lastName: function(){    
+        return (this.name.split(" ")[1])        
     }
 }
 console.log(employee.lastName())
