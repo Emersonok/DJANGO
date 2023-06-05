@@ -20,7 +20,7 @@ function reportColor(rowIndex, colIndex){
 function checkBottom(colIndex){
     var colorReport = reportColor(5, colIndex)
     for (var row = 5; row > -1; row--){
-        colorReoport = reportColor(row, colIndex)
+        colorReport = reportColor(row, colIndex)
         if (colorReport === "rgb(128, 128, 128)"){
             return row
         }
@@ -81,13 +81,34 @@ function diagonalWinCheck(){
 }
 
 var currentPlayer = 1
-var currentNmae = player1
+var currentName = player1
 var currentColor = player1Color
 
 $("h3").text(player1 + " it is your turn")
 
 $(".board button").on("click", function(){
     var col = $(this).closest("td").index()
+
+    var bottomAvail = checkBottom(col)
+    changeColor(bottomAvail, col, currentColor)
+
+    if (horizontalWinCheck() || verticalWinCheck() || diagonalWinCheck()){
+        $("h1").text(currentName + "You have won!")
+        $("h3").fadeOut("fast")
+        $("h2").fadeOut("fast")
+    }
+
+    currentPlayer = currentPlayer + -1
+
+    if (currentPlayer === 1){
+        currentName = player1
+        $("h3").text(currentName+ ", your turn")
+        currentColor = player1Color
+    }else{
+        currentName = player2
+        $("h3").text(currentName + ", your turn")
+        currentColor = player2
+    }
 })
 
 
